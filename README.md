@@ -20,6 +20,7 @@ Game Tracker is a fullstack Node JS/Vue/PostgreSQL webapp to keep a running list
 
 #### Build the Node JS backend with the frontend
 
+* For the first time building, run `npm install` in both the root and `/client` folders to install the npm dependencies.
 * `npm run build` will build the Vue app in the `/client/dist/` folder.
 * `npm start` to run the app.
 
@@ -29,9 +30,10 @@ This will default to running the app on 5000. You may edit this port in the `.en
 
 Running the frontend separately while developing allows for faster iteration by utilizing Vue's hot reloading.
 
+* For the first time building, run `npm install` in both the root and `/client` folders to install the npm dependencies.
 * Run the command `npm run dev`. This will use nodemon to start the Node JS app on `localhost:5000` and the vue app on `localhost:8080`.
 
-Confirm the `/client/vue.config.js` file has the correct port for your the Node JS app.
+Confirm the `/client/vue.config.js` file has the correct port for the Node JS app.
 
 ```
 "target": "http://localhost:5000",
